@@ -1,0 +1,4 @@
+baseURL = 'https://github.com/Narukine/Narukine.github.io'
+languageCode = 'en-us'
+title = 'It is hard to name'
+theme = "binario"
