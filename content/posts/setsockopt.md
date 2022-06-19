@@ -15,7 +15,7 @@ setsockopt(soc, SOL_SOCKET, SO_RCVTIMEO, reinterpret_cast<char*>(&tv), sizeof(tv
 
 ```
 DWORD nTimeout = 3000;
-setsockopt(soc, SOL_SOCKET, SO_RCVTIMEO, reinterpret_cast<char*>&nTimeout, sizeof(nTimeout));
+setsockopt(soc, SOL_SOCKET, SO_RCVTIMEO, reinterpret_cast<char*>(&nTimeout), sizeof(nTimeout));
 ```
 
 가끔 윈도우즈와 그 외 플랫폼 간의 인자가 다를 경우가 있으니, 맞는 것 같은데 동작이 안된다면 해당 함수의 MSDN 페이지를 참고하자.
